@@ -34,19 +34,19 @@ The API supports the following retrieval methods:
 
 **Endpoints:**  
 - `GET /books`  
-- `GET /books/{id}`
+- `GET /books/{bookId}`
 
 ### 3. **Update a Book**
 Allows users to update the details of a specific book using its unique `id`. The handler performs validation to ensure the requested book exists. If the `id` is valid, the update is performed and a success response is returned. If the `id` is invalid, an error message is provided.
 
 **Endpoint:**  
-`PUT /books/{id}`
+`PUT /books/{bookId}`
 
 ### 4. **Delete a Book**
 Users can delete a book by providing its unique `id`. If the book exists, it is removed from the collection, and a success message is returned. If the `id` is invalid, the handler will return an error message.
 
 **Endpoint:**  
-`DELETE /books/{id}`
+`DELETE /books/{bookId}`
 
 ## Request Validation
 Each request to the API undergoes validation to ensure:
